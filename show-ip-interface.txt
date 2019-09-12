@@ -1,0 +1,13 @@
+dellswitch#show ip interface
+Default Gateway................................ 192.168.0.1
+L3 MAC Address................................. F48E.3823.7EBE
+
+Routing Interfaces:
+
+Interface    State   IP Address      IP Mask         Method
+----------   -----   --------------- --------------- -------
+Vl1          Up      192.168.0.133   255.255.255.0   Manual
+Vl66         Down    192.168.166.1   255.255.255.0   Manual
+Vl77         Down    192.168.177.1   255.255.255.0   Manual
+
+dellswitch#quit

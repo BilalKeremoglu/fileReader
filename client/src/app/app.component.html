@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" style="text-align:center">
+  
+  <form >
+    <div  class="form-group">
+      <br>
+      <input class="form-control"  placeholder="Enter code here!">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Interface</th>
+        <th scope="col">State</th>
+        <th scope="col">Ip_Address</th>
+        <th scope="col">Ip_Mask</th>
+        <th scope="col">Ip_Method</th>
+      </tr>
+    </thead>
+    <tbody *ngFor='let data of data$;let i = index'>
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{data.Interface}}</td>
+        <td>{{data.State}}</td>
+        <td>{{data.Ip_Address}}</td>
+        <td>{{data.Ip_Mask}}</td>
+        <td>{{data.Method}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<router-outlet></router-outlet>
